@@ -4,4 +4,4 @@
 sudo dnf -y install zsh
 
 # Change shell to zsh
-# sudo chsh -s $(which zsh)
+chsh -s $(which zsh)

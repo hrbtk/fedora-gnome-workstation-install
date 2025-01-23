@@ -15,5 +15,10 @@ sudo dnf -y groupupdate core
 sudo dnf -y update
 sudo dnf -y upgrade --refresh
 
+# Add Terra repos
+sudo dnf install --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' --setopt='terra.gpgkey=https://repos.fyralabs.com/terra$releasever/key.asc' terra-release
+sudo dnf -y upgrade --refresh
+sudo dnf install terra-release
+
 # Reboot
 sudo reboot

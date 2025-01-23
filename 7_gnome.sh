@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Install gnome extensions cli
+pipx install gnome-extensions-cli --system-site-packages
+pipx ensurepath
+
 # Install gnome extensions
 gext install user-theme@gnome-shell-extensions.gcampax.github.com
 gext install dash-to-dock@micxgx.gmail.com
