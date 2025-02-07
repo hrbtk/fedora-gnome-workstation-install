@@ -2,13 +2,13 @@
 
 # Copy bash and zsh configs
 
-if [ -f ~/.bashrc ]; then
-    mv ~/.bashrc ~/.bashrc.bak
+if [ -f $HOME/.bashrc ]; then
+    mv $HOME/.bashrc $HOME/.bashrc.bak
 fi
-cp ~/dotfiles/.bashrc ~/.bashrc
+cp $HOME/dotfiles/.bashrc $HOME/.bashrc
 
-if [ -f ~/.zshrc ]; then
-    mv ~/.zshrc ~/.zshrc.bak
+if [ -f $HOME/.zshrc ]; then
+    mv $HOME/.zshrc $HOME/.zshrc.bak
 fi
-cp ~/dotfiles/.zshrc ~/.zshrc
-cp -r ~/dotfiles/.config/zsh ~/.config/zsh
+cp $HOME/dotfiles/.zshrc $HOME/.zshrc
+cp -r $HOME/dotfiles/.config/zsh $HOME/.config/zsh

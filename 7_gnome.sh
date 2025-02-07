@@ -24,9 +24,9 @@ gext install tilingshell@ferrarodomenico.com
 gext install user-theme@gnome-shell-extensions.gcampax.github.com
 
 # Load keybindings to dconf
-dconf load /org/gnome/desktop/wm/keybindings/ < ~/dotfiles/fedora_after_install/donf_dumps/wmkbdump.dconf
-dconf load /org/gnome/shell/keybindings/ < ~/dotfiles/fedora_after_install/donf_dumps/shellkbdump.dconf
-dconf load /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ < ~/dotfiles/fedora_after_install/donf_dumps/customkbdump.dconf
+dconf load /org/gnome/desktop/wm/keybindings/ < $HOME/fedora-gnome-workstation-install/donf_dumps/wmkbdump.dconf
+dconf load /org/gnome/shell/keybindings/ < $HOME/fedora-gnome-workstation-install/donf_dumps/shellkbdump.dconf
+dconf load /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ < $HOME/fedora-gnome-workstation-install/donf_dumps/customkbdump.dconf
 
 # Copy wallpaopers
-cp -r ~/dotfiles/wallpapers ~/Pictures/
+cp -r $HOME/dotfiles/wallpapers $HOME/Pictures/

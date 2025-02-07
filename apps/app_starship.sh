@@ -8,7 +8,7 @@ sudo dnf -y install starship
 echo '
 # add starship prompt
 eval "$(starship init bash)"
-' | sudo tee -a ~/.bashrc
+' | sudo tee -a $HOME/.bashrc
 
 
 
